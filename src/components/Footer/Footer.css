@@ -1,0 +1,83 @@
+footer {
+  background: #111;
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+​​​​​ .footer-content h1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 1.4rem;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a .icon {
+  font-size: 1.8rem;
+  transition: 0.4s ease-out;
+}
+
+.socials a:hover .icon {
+  color: #ffd662ff;
+  transition: 0.5s ease-out;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-content h1 {
+    font-size: 1.1rem;
+  }
+  .footer-content p {
+    font-size: 1rem;
+  }
+  .socials a .icon {
+    font-size: 1.4rem;
+  }
+  .footer-bottom p {
+    font-size: 0.7rem;
+  }
+}

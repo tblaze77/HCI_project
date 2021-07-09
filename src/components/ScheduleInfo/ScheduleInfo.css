@@ -1,0 +1,158 @@
+/*MAIN CONTAINER*/
+.scheduleContainer {
+  padding: 130px 40px 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scheduleContainer h1 {
+  padding-bottom: 80px;
+  font-size: 3rem;
+  letter-spacing: 3pt;
+  color: white;
+}
+
+/* ALL MATCHES*/
+.allMatchesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8ch;
+  padding-bottom: 80px;
+}
+
+/*INDIVIDUAL MATCH*/
+.match {
+  display: flex;
+  flex-direction: column;
+  gap: 3ch;
+}
+.matchInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1ch;
+  color: white;
+}
+.matchInfo span {
+  letter-spacing: 2pt;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.matchGroupSpan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1ch;
+}
+.matchTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3ch;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 7px 7px 20px 3px rgba(0, 0, 0, 0.707);
+}
+.borderBoxFirst {
+  border-right: 2pt solid lightgray;
+  padding: 10px 30px;
+}
+.borderBoxSecond {
+  border-left: 2pt solid lightgray;
+  padding: 10px 30px;
+}
+.box {
+  letter-spacing: 2pt;
+  font-weight: bold;
+}
+.matchTime span {
+  letter-spacing: 2pt;
+  font-weight: bold;
+  color: rgb(137, 137, 137);
+}
+
+/*STANDINGS*/
+.tableCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10ch;
+}
+
+.nation {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 2ch;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+}
+.cell {
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+}
+.tableCard {
+  padding: 10px 20px;
+  border-radius: 20px !important;
+  box-shadow: 10px 10px 20px 6px rgba(0, 0, 0, 0.707) !important;
+}
+.tableCard h2 {
+  letter-spacing: 3pt;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+/*MOBILE STYLE*/
+@media screen and (max-width: 800px) {
+  .tableCards {
+    display: flex;
+    flex-direction: column;
+    gap: 10ch;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .matchTime {
+    gap: 0.5ch;
+  }
+  .box {
+    gap: 1ch;
+  }
+  .borderBoxFirst,
+  .borderBoxSecond {
+    padding: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .scheduleContainer {
+    padding: 130px 7px 50px 7px;
+  }
+  .matchTime {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5ch;
+  }
+  .borderBoxFirst {
+    border: none;
+  }
+  .borderBoxSecond {
+    border: none;
+  }
+  .matchGroupSpan {
+    flex-direction: column;
+  }
+  .matchGroupSpan .dash {
+    display: none;
+  }
+  .tableCard {
+    padding: 0px;
+    border-radius: 0px !important;
+  }
+  .cellTable {
+    padding: 14px 5px !important;
+  }
+}

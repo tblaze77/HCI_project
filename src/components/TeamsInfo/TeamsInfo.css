@@ -1,0 +1,188 @@
+/*MAIN CONTAINER*/
+.mainContainer {
+  padding: 130px 40px 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer h1 {
+  padding-bottom: 20px;
+  font-size: 3rem;
+  letter-spacing: 2pt;
+  color: white;
+  text-align: center;
+}
+input {
+  font-family: "Quicksand", sans-serif;
+}
+/*ALL CARDS CONTAINER*/
+.cards {
+  padding-top: 80px;
+}
+
+.activeOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activeMore {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10ch;
+}
+.noSearchResult {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  padding: 50px 0px;
+}
+
+/*INDIVIDUAL CARD*/
+.card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  transition: 0.5s all ease-out;
+  box-shadow: 10px 10px 20px 6px rgba(0, 0, 0, 0.707);
+}
+
+/*FLAG AND NATION NAME*/
+.nationContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  padding: 0px 20px;
+}
+.nationContainer p {
+  padding-top: 10px;
+}
+
+/*DATA OF EACH TEAM*/
+.infoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+.infoTitles {
+  font-weight: bold;
+}
+.infoTitles,
+.infoContent {
+  padding: 0px 20px;
+  width: 180px;
+}
+
+.infoTitles p,
+.infoContent p {
+  padding: 15px 0px;
+}
+
+/*DROPDOWN SELECT and SEARCH CONTAINER*/
+.dropdownBox,
+.searchContainer {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 2ch;
+}
+.dropdownBox label,
+.searchContainer label {
+  font-size: 1.3rem;
+}
+.selectedDropDown,
+.inputField {
+  padding: 5px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.707);
+}
+.selectedDropDown select,
+.searchContainer input {
+  border: 0;
+  background: transparent;
+  outline: none;
+  padding: 0px 3px;
+}
+.selectedDropDown select {
+  cursor: pointer;
+}
+
+/*MOBILE STYLE*/
+@media screen and (max-width: 1200px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .mainContainer {
+    padding: 130px 10px 50px 10px;
+  }
+  .cards,
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .nationContainer {
+    padding-top: 20px;
+  }
+  .infoContainer {
+    max-width: 460px;
+    width: 100%;
+    padding: 10px 10px;
+  }
+  .infoTitles p,
+  .infoContent p {
+    font-size: 1rem;
+  }
+  .infoTitles,
+  .infoContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10px;
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .infoContainer {
+    max-width: 400px;
+  }
+  .infoTitles p,
+  .infoContent p {
+    font-size: 0.8rem;
+  }
+  .infoTitles,
+  .infoContent {
+    width: 190px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .dropdownBox,
+  .searchContainer {
+    flex-direction: column;
+  }
+  .infoContainer {
+    max-width: 260px;
+  }
+  .infoTitles p,
+  .infoContent p {
+    font-size: 0.7rem;
+  }
+  .infoTitles,
+  .infoContent {
+    width: 130px;
+  }
+}

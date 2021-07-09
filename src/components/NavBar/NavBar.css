@@ -1,0 +1,121 @@
+/*NAVBAR CONTAINER*/
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  font-size: 1.2rem;
+  z-index: 1;
+  box-shadow: 0px 10px 25px 3px rgba(0, 0, 0, 0.707);
+}
+
+/*LOGO*/
+.logoContainer {
+  padding: 5px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.logoContainer h4 {
+  font-size: 1.17rem;
+}
+/*BURGER MENU ICON*/
+.menuIcon {
+  display: none;
+}
+
+/*NAVIGATION ITEMS CONTAINER*/
+.navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 800px;
+  width: 100%;
+  list-style: none;
+}
+
+/*SPECIFIC NAVIGATION LINK*/
+.navLinks {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  text-decoration: none;
+}
+.navLinks.active,
+.navLinks:hover {
+  color: #ffd662ff;
+  border-bottom: 3px solid #ffd662ff;
+}
+
+/*AUTH*/
+.loginButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #007b8d;
+  padding: 5px 10px;
+}
+.loginButton:hover {
+  background: #00606f;
+}
+.userIcon {
+  margin-right: 7px;
+}
+
+/*MOBILE STYLES*/
+
+@media screen and (max-width: 1000px) {
+  .navbarContainer {
+    font-size: 1rem;
+  }
+  .loginButton {
+    padding: 5px 12px;
+  }
+  .userIcon {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbarContainer {
+    justify-content: center;
+  }
+
+  .menuIcon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    cursor: pointer;
+  }
+
+  .navMenu {
+    flex-direction: column;
+    height: 90vh;
+    position: absolute;
+    top: -10000px;
+    opacity: 1;
+    transition: all 0.2s ease;
+    background: #242222;
+    padding-bottom: 20px;
+  }
+  .navMenu.active {
+    top: 80px;
+  }
+  .navLinks {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-flow: column;
+  }
+  .navLinks:hover,
+  .navLinks.active {
+    border: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .menuIcon {
+    transform: translate(-50%, 60%);
+  }
+}

@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+.quoteContainer {
+  padding: 80px 30px;
+  transition: 0.5s all ease-out;
+}
+
+.paragraphContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ballContainer {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trophyMobile,
+.ballMobile {
+  display: none;
+}
+.paragraph {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.quote h1 {
+  font-family: "Courgette", cursive;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.authorContainer {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.author {
+  font-weight: bold;
+  text-align: center;
+}
+.description {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1050px) {
+  .paragraphContainer {
+    flex-direction: column;
+  }
+  .quote h1 {
+    font-size: 1.3rem;
+  }
+  .trophyMobile {
+    display: flex;
+    padding-bottom: 20px;
+  }
+  .ballContainer {
+    padding-top: 20px;
+  }
+  .ballMobile {
+    display: flex;
+  }
+  .trophy,
+  .ball {
+    display: none;
+  }
+}

@@ -1,0 +1,10 @@
+.navigationHeader {
+  background: #242222;
+  color: white;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  font-size: 1.2rem;
+  z-index: 10;
+}
